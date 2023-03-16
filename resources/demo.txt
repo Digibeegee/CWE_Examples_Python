@@ -1,0 +1,2 @@
+This is a demo to show Insecure Desialization CWE.
+File being deserialized can contain malicious code.
