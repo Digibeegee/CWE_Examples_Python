@@ -16,6 +16,6 @@ class Bank:
         account=BankAccount(accNo,accType,accName,bal)
         return account
 
-
-user1=Bank.createAccount("9876" , "Savings" , "Owner" , "1000")
-user1.getOwner()
+if __name__ == '__main__':
+    user1=Bank.createAccount("9876" , "Savings" , "Owner" , "1000")
+    user1.getOwner()

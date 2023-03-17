@@ -1,7 +1,10 @@
 import pickle
+
+#Deserialization of Untrusted Data
+
 def insecure_deserialization():
-    f = open("D:\Codeguru\CWE_Examples_Python\\resources\demo.txt","rb")
+    f = open("demo.pickle","rb")
     na = pickle.load(f)
     return na
-
-print(insecure_deserialization())
+if __name__ == '__main__':
+    print(insecure_deserialization())

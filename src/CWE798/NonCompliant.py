@@ -8,5 +8,6 @@ def verifyAdmin(pwd):
     print("Access Denied")
     return False
 
-password="pwd1234"
-verifyAdmin(password)
+if __name__ == '__main__':
+    password="pwd1234"
+    verifyAdmin(password)

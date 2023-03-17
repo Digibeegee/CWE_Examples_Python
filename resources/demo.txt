@@ -1,1 +1,0 @@
-File being deserialized can contain malicious code.

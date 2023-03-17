@@ -12,8 +12,8 @@ class User:
     def validatePassword(self, pwd):
         return self.password == pwd
 
-
-admin = User("Admin", "passcode1234")
-pwd = input('Enter password')
-while not admin.validatePassword(pwd):
-    pwd = input('Wrong Password. Try Again')
+if __name__ == '__main__':
+    admin = User("Admin", "passcode1234")
+    pwd = input('Enter password')
+    while not admin.validatePassword(pwd):
+        pwd = input('Wrong Password. Try Again')
