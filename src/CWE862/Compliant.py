@@ -1,5 +1,3 @@
-
-#Improper Authorizationq
 from src.CWE862.User import User
 
 
@@ -17,4 +15,8 @@ if __name__ == '__main__':
         print('User Verified')
         msg = MessageBoard()
         msg.read()
-        msg.post('Attacker can exploit this weakness', user1.username)
+        #adding authorization check
+        if 'write' in user1.getPermissions():
+            msg.post('Attacker can exploit this weakness', user1.username)
+        else:
+            print('No post permission for user: ',user1.username)

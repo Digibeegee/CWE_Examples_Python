@@ -1,5 +1,4 @@
-
-#Out of bounds write
+#out of bouinds write
 if __name__ == '__main__':
     arr = [0] * 5
     for i in range(len(arr)+1):
